@@ -5,7 +5,6 @@ function getRandomHexColor() {
 }
 
 function createBoxes(amount) {
-  console.log(inputEl.valueAsNumber);
   let width = 20;
   let height = 20;
   const divArray = [];
@@ -23,7 +22,6 @@ function createBoxes(amount) {
 function destroyBoxes() {
   boxesEl.innerHTML = '';
   inputEl.value = '';
-
 };
 
 const inputEl = document.querySelector('input[type="number"]');
@@ -36,6 +34,3 @@ createBtnEl.addEventListener('click', () => {
   createBoxes(amount);
 });
 destroyBtnEl.addEventListener('click', destroyBoxes);
-
-console.dir(inputEl);
-console.log(inputEl.valueAsNumber);
